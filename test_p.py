@@ -11,8 +11,10 @@ def multiply(a, b):
 
 
 def divide(a, b):
-    # БAГ
-    return a * b
+    # БAГ исправлен
+    if b == 0:
+        raise ValueError("Деление на ноль невозможно")
+    return a / b
 
 
 if __name__ == "__main__":
